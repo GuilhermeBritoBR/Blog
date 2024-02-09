@@ -19,3 +19,30 @@ app.get('/', (req, res)=>{
     res.render('pages/index');
 });
 
+//rotas principais
+//calculadora de pace, a função desenvolvida 
+app.get('/calculadora', (req, res)=>{
+    res.render('pages/calculadora');
+});
+//sobre mim
+app.get('/sobre', (req, res)=>{
+    res.render('pages/sobre');
+});
+//galeria
+app.get('/galeria', (req, res)=>{
+    res.render('pages/galeria');
+});
+//rede
+app.get('/rede', (req, res)=>{
+    res.render('pages/rede');
+});
+
+///scripts para o funcionamento da administração
+
+//////
+
+///scripts para validação
+
+////
+
+
