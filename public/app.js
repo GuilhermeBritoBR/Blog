@@ -35,5 +35,7 @@ caixa.innerHTML ='BRITO.RUNNING | ' + anoAtual;
     //verificando se as variaveis estão chegando com valor
     
  
- }
+ };
+
+
  
