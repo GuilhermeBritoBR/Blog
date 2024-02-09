@@ -136,3 +136,9 @@ h1{
     margin: 50px;
 
 }
+.container-pictures{
+    background-image: url("../5576_xvpiracicaba-2014.jpg");
+    background-size: cover;
+  
+    
+}
