@@ -36,6 +36,10 @@ app.get('/galeria', (req, res)=>{
 app.get('/rede', (req, res)=>{
     res.render('pages/rede');
 });
+//patrocinadores
+app.get('/patrocinadores', (req, res)=>{
+    res.render('pages/patrocinadores');
+});
 
 ///scripts para o funcionamento da administração
 

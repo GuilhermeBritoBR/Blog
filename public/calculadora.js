@@ -37,3 +37,33 @@
 
 // Chama a função para popular o select quando a página é carregada
 window.onload = popularSelect;
+
+ // Função para calcular tempo de corrida em minutos e ritmo por quilômetro
+ function calcularTempo() {
+  // Obter o valor do ritmo em minutos por quilômetro do seletor
+  var ritmoSelecionado = document.getElementById("pace_corrida").value;
+  console.log(ritmoSelecionado);
+  var ritmoMinutos = parseInt(ritmoSelecionado.split(':')[0]) * 60 + parseInt(ritmoSelecionado.split(':')[0]);
+  console.log(ritmoMinutos);
+  // Obter o valor da distância em quilômetros do campo de entrada
+  var km = parseFloat(document.getElementById("distancia-km").value);
+
+  // Obter o valor da distância em metros do campo de entrada
+  var metros = parseFloat(document.getElementById("distancia-metros").value);
+
+  // Calcular a distância total em quilômetros
+  var distanciaTotal = km*1000 + (metros );
+
+  // Calcular o tempo total de corrida em minutos
+  var tempoTotalMinutos = (distanciaTotal / ritmoMinutos);
+
+
+  // Calcular o ritmo por quilômetro
+  var ritmoPorKm = (tempoTotalMinutos / distanciaTotal)*360;
+
+  var tempoTotalMinutos2 = (distanciaTotal/1000) *ritmoPorKm;
+
+
+  // Exibir o tempo total de corrida em minutos e o ritmo por quilômetro
+  alert("Tempo total de corrida: " + tempoTotalMinutos2.toFixed(2) + " minutos\nRitmo por quilômetro: " + ritmoPorKm.toFixed(2) + " minutos/km");
+}
